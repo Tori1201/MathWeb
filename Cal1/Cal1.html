@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Equation Explorers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/homepage/Homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/CollegeAlg/CollegeAlg.html">College Algebra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/PreCal/PreCal.html">Pre-Cal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/Cal1/Cal1.html">Calculus I</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Calculus I</title>
+          <style>
+              /* General styling */
+              * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+              }
+              body {
+                  font-family: 'Poppins', sans-serif;
+                  line-height: 1.6;
+                  background-size: cover;
+                  color: #333;
+                  overflow-x: hidden;
+              }
+              header {
+                  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(45,183,71,1) 100%);
+                  background-color: white;
+                  text-align: center;
+                  padding: 30px 20px;
+                  font-size: 2.5rem;
+                  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+              }
+              nav {
+                  position: sticky;
+                  top: 0;
+                  background: rgba(255, 255, 255, 0.9);
+                  padding: 15px 0;
+                  text-align: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  z-index: 1000;
+              }
+              nav a {
+                  color: #2e7d32;
+                  text-decoration: none;
+                  font-weight: 600;
+                  margin: 0 20px;
+                  font-size: 1.1rem;
+                  transition: color 0.3s;
+              }
+              nav a:hover {
+                  color: #1b5e20;
+              }
+              .container {
+                  max-width: 1100px;
+                  margin: 40px auto;
+                  background: rgba(255, 255, 255, 0.95);
+                  border-radius: 12px;
+                  padding: 30px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(10px);
+              }
+              .section {
+                  margin-bottom: 40px;
+              }
+              .section h2 {
+                  font-size: 2rem;
+                  color: #2e7d32;
+                  margin-bottom: 20px;
+                  text-align: center;
+                  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              }
+              .section p {
+                  margin-bottom: 20px;
+                  font-size: 1.2rem;
+                  color: #444;
+                  text-align: justify;
+              }
+              ul {
+                  list-style: none;
+                  padding: 0;
+              }
+              ul li {
+                  margin: 10px 0;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+              }
+              ul li::before {
+                  content: "✓";
+                  color: #2e7d32;
+                  margin-right: 10px;
+                  font-size: 1.2rem;
+              }
+              ul li a {
+                  color: #2e7d32;
+                  text-decoration: none;
+                  font-weight: 500;
+              }
+              ul li a:hover {
+                  text-decoration: underline;
+                  color: #1b5e20;
+              }
+              footer {
+                  text-align: center;
+                  background: linear-gradient(90deg, rgba(45,183,71,1) 0%, rgba(34,193,195,1) 100%);
+                  padding: 20px;
+                  margin-top: 30px;
+                  font-size: 1rem;
+                  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+              }
+              footer a {
+                  text-decoration: none;
+              }
+              footer a:hover {
+                  text-decoration: underline;
+              }
+          </style>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body background="backgroundmath.png"></body>
+      <header>
+        Welcome to Calculus I
+    </header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#topics">Topics</a>
+        <a href="#resources">Resources</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="introduction">
+            <h2>What is Calculus I?</h2>
+            <p>Calculus I is the study of limits, derivatives, and integrals, which are essential tools for understanding how things change. It forms the basis for solving problems in science, engineering, economics, and more. This course helps you build a strong foundation for higher-level mathematics and applied fields.</p>
+        </div>
+        <div class="section" id="topics">
+            <h2>Key Topics in Calculus I</h2>
+            <ul>
+                <li>
+                    <b>Limits and Continuity:</b> 
+                    <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new" target="_blank">Explore how functions behave near certain points</a>.
+                </li>
+                <li>
+                    <b>Derivatives and Applications:</b> 
+                    <a href="https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules" target="_blank">Learn how to measure rates of change</a> and 
+                    <a href="https://www.khanacademy.org/math/calculus-1/cs1-derivatives-applications" target="_blank">solve real-world problems</a>.
+                </li>
+                <li>
+                    <b>Integration and Techniques:</b> 
+                    <a href="https://www.khanacademy.org/math/calculus-1/cs1-integration-and-accumulation" target="_blank">Understand the area under curves</a>.
+                </li>
+                <li>
+                    <b>Fundamental Theorem of Calculus:</b> 
+                    <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-antiderivatives-ftc-new" target="_blank">Discover the link between derivatives and integrals</a>.
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="resources">
+            <h2>Helpful Resources</h2>
+            <p>Check out these resources for tutorials, videos, and practice problems:</p>
+            <ul>
+                <li><a href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy: Calculus I</a></li>
+                <li><a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/" target="_blank">MIT OpenCourseWare</a></li>
+                <li><a href="https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank">Paul's Online Math Notes</a></li>
+                <li><a href="https://www.mathsisfun.com/calculus/" target="_blank">Math is Fun: Calculus</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+      Made with ❤️ for Calculus enthusiasts | <a href="mailto:info@calculus.com">Contact Us</a>
+    </footer>
+      <footer class="text-center text-white" style="background-color: #46819c;">
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright:
+          <a class="text-dark" href="">Group 4</a>
+        </div>
+      </footer>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    </body>

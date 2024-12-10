@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Equation Explorers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/homepage/Homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/CollegeAlg/CollegeAlg.html">College Algebra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/PreCal/PreCal.html">Pre-Cal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/Cal1/Cal1.html">Calculus I</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <title>College Algebra</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff5f8;
+            color: #333;
+        }
+
+        header {
+            background:  linear-gradient(to right, #ffe6eb, #ffd6e1);
+            color: #333;
+            text-align: center;
+            padding: 2.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #cc7485;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin: 0.5rem 0;
+            color: #995c6b;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #ffe6eb;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #cc7485;
+        }
+
+        .section p,
+        .section li {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .highlight {
+            color: #cc7485;
+            font-weight: bold;
+        }
+
+        .example-links {
+            margin-top: 1rem;
+        }
+
+        .example-links a {
+            display: inline-block;
+            margin: 0.5rem 0;
+            padding: 0.5rem 1rem;
+            background: #ffe6eb;
+            color: #cc7485;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+            border: 1px solid #ffd6e1;
+        }
+
+        .example-links a:hover {
+            background: #ffd6e1;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #ffe6eb;
+            color: #995c6b;
+            font-size: 1rem;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    </head>
+    <body>
+      <header>
+        <h1>College Algebra</h1>
+        <p>Master algebra through practice, tools, and understanding core concepts.</p>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>What is College Algebra?</h2>
+            <p>College Algebra is an essential course that introduces key mathematical concepts such as <span class="highlight">equations, functions, inequalities</span>, and their applications. It provides a foundation for advanced studies in mathematics, science, engineering, and technology. This course develops critical problem-solving and analytical skills.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Topics in College Algebra</h2>
+            <ul>
+                <li><span class="highlight">Linear and Quadratic Equations:</span> Solving equations of the form ax + b = c or ax² + bx + c = 0.</li>
+                <li><span class="highlight">Polynomials and Factoring:</span> Understanding polynomial functions, factoring expressions, and simplifying terms.</li>
+                <li><span class="highlight">Graphing Functions:</span> Plotting linear, quadratic, and higher-degree functions on the coordinate plane.</li>
+                <li><span class="highlight">Exponential and Logarithmic Functions:</span> Exploring growth and decay, and their inverse relationships.</li>
+                <li><span class="highlight">Systems of Equations:</span> Solving multiple equations simultaneously, graphically or algebraically.</li>
+                <li><span class="highlight">Transformations:</span> Applying shifts, stretches, and reflections to functions.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Interactive Practice Tools</h2>
+            <p>Here are some great tools to practice and enhance your algebra skills:</p>
+            <div class="example-links">
+                <a href="https://www.desmos.com" target="_blank">Desmos Graphing Calculator</a>
+                <a href="https://www.symbolab.com" target="_blank">Symbolab: Algebra Solver</a>
+                <a href="https://www.wolframalpha.com/examples/mathematics/algebra/" target="_blank">Wolfram Alpha: Algebra Examples</a>
+                <a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy: Algebra Lessons</a>
+                <a href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Math is Fun: Algebra Practice</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Problem-Solving Exercises</h2>
+            <p>Test your knowledge with these problem types:</p>
+            <ul>
+                <li><span class="highlight">Linear Equations:</span> Solve for x in equations like 2x + 5 = 15.</li>
+                <li><span class="highlight">Quadratic Equations:</span> Factor and solve equations like x² - 5x + 6 = 0.</li>
+                <li><span class="highlight">Graphing Functions:</span> Use graphing calculators to plot y = 2x + 3.</li>
+                <li><span class="highlight">Exponential Growth:</span> Solve problems like P = P₀e^(rt).</li>
+                <li><span class="highlight">Systems of Equations:</span> Find solutions for multiple equations like 3x + 2y = 12 and x - y = 3.</li>
+            </ul>
+            <p>Try practicing these with a calculator or on paper!</p>
+        </div>
+
+        <div class="section">
+            <h2>Step-by-Step Problem Solvers</h2>
+            <p>Use these tools to get step-by-step solutions for your algebra problems:</p>
+            <div class="example-links">
+                <a href="https://www.mathway.com/Algebra" target="_blank">Mathway: Algebra Solver</a>
+                <a href="https://www.symbolab.com" target="_blank">Symbolab: Step-by-Step Solutions</a>
+                <a href="https://quickmath.com/" target="_blank">QuickMath: Instant Problem Solving</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Algebra Guide | Happy Learning!</p>
+    </footer>
+      <footer class="text-center text-white" style="background-color: #46819c;">
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright:
+          <a class="text-dark" href="">Group 4</a>
+        </div>
+      </footer>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    </body>
